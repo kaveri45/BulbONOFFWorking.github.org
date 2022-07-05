@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+button { padding:10px; margin:60px; background-color:orange; }
+#on:hover{background-color: greenyellow;
+border-color: black;}
+#of:hover{background-color: red;
+border-color: black;}
+img{
+    align-items: center;
+    position: relative;
+    left: 8%;
+}
+</style>
+</head>
+<body>
+<script>
+function light(value)
+	{
+	var pic;
+		if(value==0) 
+		{
+			pic="on.PNG";
+		}
+		else
+		{
+			pic="off.PNG";
+		}
+		document.getElementById("bulb").src=pic;
+	}
+</script>
+
+
+<img id="bulb" src="on.PNG">
+
+<br>
+<button onclick=light(0) id="on">Turn ON</button>
+<button onclick=light(1) id="of">Turn OF</button>
+
+</body>
+</html>
